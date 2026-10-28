@@ -1,0 +1,119 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Main dashboard grid */
+.dashboard {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar content";
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Header spans the entire top */
+.header {
+    grid-area: header;
+    background-color: #172554;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Vertical sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #dbeafe;
+    padding: 25px 20px;
+    border-radius: 10px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.sidebar a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #172554;
+}
+
+/* Two-column content grid */
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    gap: 20px;
+}
+
+/* Dashboard cards */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card h2 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+/* Hover enlarges card and adds shadow */
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* One card spans two columns */
+.wide-card {
+    grid-column: span 2;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "content";
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .wide-card {
+        grid-column: span 1;
+    }
+}

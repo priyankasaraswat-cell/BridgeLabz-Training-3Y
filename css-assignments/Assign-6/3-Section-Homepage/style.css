@@ -1,0 +1,111 @@
+
+/* Basic page layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 22px 5%;
+    background-color: #172554;
+    color: white;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Three boxes in one row */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+    padding: 40px 5%;
+}
+
+.box {
+    flex: 1;
+    min-width: 0;
+    padding: 35px 20px;
+    text-align: center;
+    background-color: #dbeafe;
+    border: 2px solid #93c5fd;
+    border-radius: 12px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Rotate each box on hover */
+.box:hover {
+    transform: rotate(2deg);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.box h2 {
+    margin-bottom: 15px;
+    color: #1d4ed8;
+}
+
+.box p {
+    line-height: 1.6;
+}
+
+/* Footer stays at the bottom */
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #172554;
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .box {
+        width: 100%;
+    }
+}

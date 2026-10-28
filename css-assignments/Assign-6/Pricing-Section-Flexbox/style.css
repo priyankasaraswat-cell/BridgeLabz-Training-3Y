@@ -1,0 +1,173 @@
+
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Page heading */
+header {
+    text-align: center;
+    padding: 35px 15px;
+    background-color: #172554;
+    color: white;
+}
+
+header h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+/* Align three cards horizontally */
+.pricing-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 50px 5%;
+}
+
+/* Pricing cards */
+.pricing-card {
+    flex: 1;
+    max-width: 320px;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid #cbd5e1;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Stagger the fade-in animation */
+.pricing-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.pricing-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Fade-in keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Raise card on hover */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Highlight middle card */
+.featured {
+    background-color: #dbeafe;
+    border: 3px solid #2563eb;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+
+.popular {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.pricing-card h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1d4ed8;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: normal;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.pricing-card li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #1e40af;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #172554;
+    color: white;
+}
+
+/* Stack cards vertically below 750px */
+@media (max-width: 749px) {
+    .pricing-container {
+        flex-direction: column;
+        padding: 35px 20px;
+    }
+
+    .pricing-card {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
