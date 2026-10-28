@@ -1,0 +1,110 @@
+
+/* Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #263238;
+    line-height: 1.8;
+}
+
+/* Article heading */
+.article-header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.article-header h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.author {
+    font-size: 14px;
+    color: #dbeafe;
+    margin-top: 15px;
+}
+
+/* Article content */
+.article {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Space between paragraphs */
+.article p {
+    margin-bottom: 25px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+/* Style the first letter of every paragraph */
+.article p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* Make the first line of every paragraph bold */
+.article p::first-line {
+    font-weight: bold;
+}
+
+/* Highlight important words */
+mark {
+    background-color: #fde68a;
+    color: #78350f;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Blockquote styling */
+blockquote {
+    margin: 30px 0;
+    padding: 20px 25px;
+    border-left: 6px solid #2563eb;
+    background-color: #eaf2ff;
+    color: #17365d;
+    font-size: 19px;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .article-header h1 {
+        font-size: 27px;
+    }
+
+    .article {
+        margin: 15px;
+        padding: 18px;
+    }
+
+    .article p {
+        font-size: 16px;
+    }
+}

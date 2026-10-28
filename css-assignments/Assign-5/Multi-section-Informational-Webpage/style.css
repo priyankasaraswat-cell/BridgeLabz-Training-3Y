@@ -1,0 +1,137 @@
+
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Navigation */
+nav {
+    background-color: #ea580c;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 18px;
+}
+
+nav a:hover {
+    color: #172554;
+}
+
+/* Common section styling */
+section {
+    width: 100%;
+    min-height: 280px;
+    padding: 55px 10%;
+    border-bottom: 4px solid white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+section p {
+    max-width: 750px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Linear gradient section */
+.home {
+    background: linear-gradient(120deg, #bfdbfe, #fef3c7);
+    color: #172554;
+}
+
+/* Background image with fixed attachment */
+.places {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45),
+                        rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1400&q=80");
+    color: white;
+}
+
+/* Radial gradient section */
+.culture {
+    background: radial-gradient(circle, #fed7aa, #fb923c, #9a3412);
+    color: #431407;
+}
+
+/* Second fixed background image */
+.food {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+                        rgba(0, 0, 0, 0.5)),
+        url("https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1400&q=80");
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 15px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 15px;
+    }
+
+    section {
+        padding: 35px 7%;
+        background-attachment: scroll;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+}
