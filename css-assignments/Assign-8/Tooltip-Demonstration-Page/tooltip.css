@@ -1,0 +1,70 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    margin-bottom: 70px;
+}
+
+/* Center examples using Flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Each tooltip item */
+.item {
+    position: relative;
+    background-color: white;
+    padding: 25px;
+    width: 140px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+    cursor: pointer;
+}
+
+/* Icon styling */
+.icon {
+    font-size: 35px;
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+
+    /* Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+
+    /* Smooth fade-in effect */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show tooltip on hover */
+.item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+footer {
+    margin-top: 80px;
+    color: #555;
+}

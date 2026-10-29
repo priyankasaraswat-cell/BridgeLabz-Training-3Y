@@ -1,0 +1,70 @@
+
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Element selector */
+h1 {
+    text-align: center;
+    color: navy;
+}
+
+/* Class selector */
+.highlight {
+    background-color: lightyellow;
+    padding: 10px;
+}
+
+/* ID selector */
+#special {
+    color: red;
+    font-weight: bold;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid blue;
+}
+
+/* Attribute selector for HTTPS links */
+a[href^="https"] {
+    color: green;
+}
+
+/* Descendant selector */
+.combinators div p {
+    color: purple;
+}
+
+/* Child selector: direct paragraphs */
+.combinators > p {
+    background-color: #dff9fb;
+}
+
+/* Adjacent sibling selector */
+h3 + p {
+    color: red;
+}
+
+/* General sibling selector */
+h2 ~ p {
+    text-decoration: underline;
+}
+
+/* Layout and spacing */
+.content {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+}

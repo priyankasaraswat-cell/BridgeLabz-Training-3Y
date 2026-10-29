@@ -1,0 +1,94 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 25px;
+    color: #333;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    margin-bottom: 40px;
+}
+
+/* Arrange cards using Flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #ccc;
+
+    /* Smooth transition */
+    transition: all 0.4s ease;
+}
+
+/* Card transformation on hover */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #aaa;
+}
+
+/* Common button styling */
+.btn {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+
+    /* Smooth animation */
+    transition: all 0.4s ease;
+}
+
+/* Primary button */
+.btn-primary {
+    background-color: #3498db;
+}
+
+/* Success button */
+.btn-success {
+    background-color: #2ecc71;
+}
+
+/* Danger button */
+.btn-danger {
+    background-color: #e74c3c;
+}
+
+/* Hover: color, size and shadow change */
+.btn:hover {
+    background-color: #6c5ce7;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px #bbb;
+}
+
+/* Active effect when button is pressed */
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Keyboard focus effect */
+.btn:focus-visible {
+    outline: 3px solid #222;
+    outline-offset: 4px;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 50px;
+    color: #666;
+}

@@ -1,0 +1,80 @@
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+/* Flexbox button layout */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+/* Common button style */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px #ccc;
+    transition: all 0.3s ease;
+}
+
+/* Primary button */
+.primary {
+    background: #2563eb;
+    color: white;
+}
+
+/* Secondary button */
+.secondary {
+    background: #475569;
+    color: white;
+}
+
+/* Outline button */
+.outline {
+    background: white;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+/* Hover effect */
+.btn:not(:disabled):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px #bbb;
+    background-color: #7c3aed;
+    color: white;
+}
+
+/* Active effect */
+.btn:not(:disabled):active {
+    transform: scale(0.95);
+}
+
+/* Keyboard focus */
+.btn:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 4px;
+}
+
+/* Disabled button */
+.btn:disabled {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+footer {
+    margin-top: 80px;
+}
