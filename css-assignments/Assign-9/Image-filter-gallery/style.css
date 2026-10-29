@@ -1,0 +1,97 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 25px;
+    background-color: #243447;
+    color: white;
+}
+
+/* Responsive CSS Grid layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Image card styling */
+figure {
+    margin: 0;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #ccc;
+}
+
+/* Common image styling */
+figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.4s ease;
+}
+
+/* Different CSS filters */
+.blur {
+    filter: blur(4px);
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.brightness {
+    filter: brightness(50%);
+}
+
+.contrast {
+    filter: contrast(200%);
+}
+
+.hue {
+    filter: hue-rotate(120deg);
+}
+
+/* Remove filter on hover */
+figure img:hover {
+    filter: none;
+}
+
+/* Image captions */
+figcaption {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* One column below 600px */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #243447;
+    color: white;
+}
