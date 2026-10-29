@@ -1,0 +1,104 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 25px;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    color: #2c3e50;
+    letter-spacing: 2px;
+}
+
+/* Article layout */
+article {
+    max-width: 800px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Article heading */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #34495e;
+}
+
+/* First paragraph styling */
+.intro {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* First letter and first line effects */
+.intro::first-letter {
+    font-size: 40px;
+    color: #e74c3c;
+}
+
+.intro::first-line {
+    letter-spacing: 1px;
+}
+
+/* Different font family */
+.serif {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Font weight demonstration */
+.bold-text {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* Strong element */
+strong {
+    color: #c0392b;
+}
+
+/* Emphasis element */
+em {
+    color: #8e44ad;
+    font-style: italic;
+}
+
+/* Mark element */
+mark {
+    background-color: #ffe066;
+    color: #333;
+    padding: 3px;
+}
+
+/* Letter spacing and alignment */
+.special-text {
+    font-family: Verdana, sans-serif;
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+}

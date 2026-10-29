@@ -1,0 +1,80 @@
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 25px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Attribute selector: selects text inputs */
+input[type="text"] {
+    border: 2px solid blue;
+    padding: 10px;
+    margin: 8px;
+}
+
+/* Attribute selector: selects HTTPS links */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* Pseudo-class: changes color on hover */
+li:hover {
+    color: red;
+}
+
+/* Pseudo-class: styles the focused input */
+input:focus {
+    outline: 2px solid orange;
+}
+
+/* Pseudo-class: selects every second list item */
+li:nth-child(2) {
+    background-color: lightyellow;
+}
+
+/* Pseudo-element: adds content before heading */
+h2::before {
+    content: "★ ";
+    color: orange;
+}
+
+/* Pseudo-element: adds content after heading */
+h2::after {
+    content: " ✓";
+    color: green;
+}
+
+/* Child combinator: selects direct paragraphs */
+.combinators > p {
+    color: blue;
+}
+
+/* Adjacent sibling: selects paragraph after h2 */
+h2 + p {
+    font-weight: bold;
+}
+
+/* General sibling: selects paragraphs after h2 */
+h2 ~ p {
+    text-decoration: underline;
+}
+
+/* Descendant selector: selects nested paragraphs */
+.combinators div p {
+    color: purple;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}

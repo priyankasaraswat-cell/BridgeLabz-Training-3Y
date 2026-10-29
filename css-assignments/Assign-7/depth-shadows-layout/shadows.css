@@ -1,0 +1,58 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Heading with text shadow */
+h1 {
+    color: #2c3e50;
+    text-shadow: 3px 3px 5px gray;
+}
+
+/* Arrange cards in a single row */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Common card styling */
+.card {
+    width: 220px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+/* Different box shadows */
+.card1 {
+    box-shadow: 0 4px 8px gray;
+}
+
+.card2 {
+    box-shadow: 5px 5px 15px #3498db;
+}
+
+.card3 {
+    box-shadow: 0 8px 20px #999;
+}
+
+/* Lift cards on hover */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+footer {
+    margin-top: 60px;
+    color: #555;
+}

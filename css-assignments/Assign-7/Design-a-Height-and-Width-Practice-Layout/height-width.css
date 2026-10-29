@@ -1,0 +1,76 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    min-height: 100vh;
+
+    /* Center content vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Heading styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Arrange boxes using Flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Common box styling */
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: auto;
+    border-radius: 12px;
+}
+
+/* Box 1: Pixel units */
+.box1 {
+    width: 150px;
+    height: 120px;
+    background-color: #f9c74f;
+}
+
+/* Box 2: Percentage and viewport units */
+.box2 {
+    width: 30%;
+    height: 25vh;
+    min-height: 120px;
+    background-color: #90be6d;
+}
+
+/* Box 3: em units and overflow */
+.box3 {
+    width: 12em;
+    height: 10em;
+    max-width: 100%;
+    background-color: #90caf9;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #555;
+}

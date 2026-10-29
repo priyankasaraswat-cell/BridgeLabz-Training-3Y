@@ -1,0 +1,67 @@
+
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+/* Main section common styling */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Linear gradient background */
+.linear {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+/* Radial gradient background */
+.radial {
+    background: radial-gradient(circle, #667eea, #764ba2, #1a1a40);
+
+    /* Creates a parallax-like effect */
+    background-attachment: fixed;
+}
+
+/* Text styling */
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Fixed footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+    padding: 8px 0;
+    z-index: 10;
+}
