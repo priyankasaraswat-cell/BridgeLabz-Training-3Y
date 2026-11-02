@@ -1,0 +1,62 @@
+
+/* General Styling */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Heading */
+h1 {
+    color: #243b55;
+    font-weight: bold;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+.card-header {
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+/* Pro Card Header */
+.pro-card .card-header {
+    background-color: #0b5ed7;
+    color: white;
+}
+
+/* Price Styling */
+.card-body h2 {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* List Items */
+.list-group-item {
+    padding: 12px;
+}
+
+/* Pro Card List */
+.pro-card .list-group-item {
+    background-color: #0d6efd;
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+.btn {
+    padding: 10px;
+    border-radius: 6px;
+}

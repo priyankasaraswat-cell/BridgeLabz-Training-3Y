@@ -1,0 +1,67 @@
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+    padding: 120px 0;
+}
+
+/* Hero Heading */
+.hero h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #12345a;
+    margin-bottom: 20px;
+}
+
+/* Hero Paragraph */
+.hero p {
+    font-size: 19px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+/* About and Services Headings */
+h2 {
+    font-weight: bold;
+    color: #12345a;
+}
+
+/* Service Cards */
+.card {
+    border: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #12345a;
+}
+
+/* Responsive Styling */
+@media (max-width: 576px) {
+
+    .hero {
+        padding: 75px 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}

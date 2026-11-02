@@ -1,0 +1,81 @@
+
+/* Custom Bootstrap Theme Variables */
+:root {
+    --bs-primary: #8e44ad;
+    --bs-secondary: #e056a0;
+    --bs-font-sans-serif: 'Poppins', sans-serif;
+}
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f5fc;
+}
+
+/* Navbar Styling */
+.custom-navbar {
+    background-color: #8e44ad;
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 0;
+}
+
+/* Main Headings */
+h1, h2 {
+    color: #6c3483;
+    font-weight: bold;
+}
+
+/* Custom Primary Button */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    transition: 0.3s;
+}
+
+/* Button Hover */
+.btn-primary:hover {
+    background-color: #732d91;
+    border-color: #732d91;
+    transform: translateY(-3px);
+}
+
+/* Blog Cards */
+.blog-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* Blog Images */
+.blog-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Blog Card Hover */
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Footer Styling */
+.custom-footer {
+    background-color: #512e5f;
+}
+
+/* Responsive Styling */
+@media (max-width: 576px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .blog-card img {
+        height: 180px;
+    }
+
+}
